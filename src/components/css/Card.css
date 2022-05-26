@@ -1,0 +1,13 @@
+#imgs{
+    width:29% !important;
+    padding-bottom: 0px;
+    border-radius: 40px 0 0 40px;
+}
+.row{
+    --bs-gutter-x:0;
+}
+@media(max-width : 1200px){
+    #imgs{
+        width: 0 !important;
+    }
+}

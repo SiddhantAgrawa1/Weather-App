@@ -21,22 +21,19 @@ const Weatherapp = () => {
 },[search])
     
     return (
-        <div className="vh-100" style={{backgroundColor:"#4B515D"}}>
+        <div className="vh-100" >
             <div className="container py-5 h-100" >
                 <div  className="row d-flex justify-content-center align-items-center h-10">
                     <input id='inputField' className="col-md-7 col-lg-6 col-xl-4" type="search" placeholder="Mumbai" onChange={(event) => {setSearch(event.target.value)}}></input>
                 </div>
+                 
                 { (!city || city.cod === '404') ? <p className="row d-flex justify-content-center align-items-center h-10" id='para'> No data Found</p> : 
                     (
                        <Card data={city}/>
-                    // <div>
-                    // <h2>{search}</h2>
-                    // <h1>{city.temp}</h1>
-                    // <h3>Min : {city.temp_min} Cel | Max : {city.temp_max} Cel</h3>
-                    // </div>
                     )
                 }
             </div>
+            <h3 style={{color:'whitesmoke',marginTop:'-60px',textAlign:'right',fontFamily:'cursive',marginRight:'20px'}}>Devloped with <span role="img" aria-label="sheep">❤️</span> by Sid</h3>
         </div>
     )
 }
