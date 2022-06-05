@@ -10,4 +10,4 @@ You can check the live working of this code on following url :
 
 https://siddhantagrawa1.github.io/Weather-App/
 
-Please, Fill free to review.
+Please, Feel free to review.
